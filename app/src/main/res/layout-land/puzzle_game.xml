@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_menuu">
+
+    <ImageView
+        android:id="@+id/step"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_double_arrow_svgrepo_com"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22" />
+
+    <TextView
+        android:id="@+id/textStepCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="1dp"
+        android:fontFamily="@font/baloo_bhai_2_medium"
+        android:text=" 1"
+        android:textColor="#002CFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/step"
+        app:layout_constraintStart_toEndOf="@id/step"
+        app:layout_constraintTop_toTopOf="@id/step" />
+
+    <ImageView
+        android:id="@+id/time"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/time_clock"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <Chronometer
+        android:id="@+id/chhronometer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/baloo_bhai_2_medium"
+        android:text="11:12"
+        android:textColor="#002CFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/time"
+        app:layout_constraintLeft_toRightOf="@id/time"
+        app:layout_constraintTop_toTopOf="@id/time" />
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/containerButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/bg_fon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn1"
+            style="@style/PuzzleBottom"
+            tools:text="15" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn2"
+            style="@style/PuzzleBottom"
+            android:layout_toEndOf="@id/btn1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn3"
+            style="@style/PuzzleBottom"
+            android:layout_toEndOf="@id/btn2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn4"
+            style="@style/PuzzleBottom"
+            android:layout_toEndOf="@id/btn3" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn5"
+            style="@style/PuzzleBottom"
+            android:layout_below="@id/btn1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn6"
+            style="@style/PuzzleBottom"
+            android:layout_below="@id/btn2"
+            android:layout_toEndOf="@id/btn5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn7"
+            style="@style/PuzzleBottom"
+            android:layout_below="@id/btn3"
+            android:layout_toEndOf="@id/btn6" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn8"
+            style="@style/PuzzleBottom"
+            android:layout_below="@id/btn4"
+            android:layout_toEndOf="@id/btn7" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn9"
+            style="@style/PuzzleBottom"
+            android:layout_below="@id/btn5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn10"
+            style="@style/PuzzleBottom"
+            android:layout_below="@id/btn6"
+            android:layout_toEndOf="@id/btn9" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn11"
+            style="@style/PuzzleBottom"
+            android:layout_below="@id/btn7"
+            android:layout_toEndOf="@id/btn10" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn12"
+            style="@style/PuzzleBottom"
+            android:layout_below="@id/btn8"
+            android:layout_toEndOf="@id/btn11" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn13"
+            style="@style/PuzzleBottom"
+            android:layout_below="@id/btn9" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn14"
+            style="@style/PuzzleBottom"
+            android:layout_below="@id/btn10"
+            android:layout_toEndOf="@id/btn13" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn15"
+            style="@style/PuzzleBottom"
+            android:layout_below="@id/btn11"
+            android:layout_toEndOf="@id/btn14" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn16"
+            style="@style/PuzzleBottom"
+            android:layout_below="@id/btn12"
+            android:layout_toEndOf="@id/btn15" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/btnPause"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="20dp"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:src="@drawable/baseline_pause_circle_outline_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/mute"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/bg_mute"
+        android:backgroundTint="#002CFF"
+        android:clickable="true"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/unMute"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/bg_unmute"
+        android:backgroundTint="#002CFF"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/shuffleBtn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:backgroundTint="#002CFF"
+        android:src="@drawable/ic_baseline_refresh_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnExit"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/bg_back1"
+        android:backgroundTint="#002CFF"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

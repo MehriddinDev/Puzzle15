@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_width="400dp"
+        android:background="@drawable/bg_timebar"
+        android:id="@+id/dialogg">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/step"
+                    android:textSize="32sp"
+                    android:textColor="@color/black"
+                    android:text="Step:"
+                    android:fontFamily="@font/baloo"
+                    android:layout_marginStart="15dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:gravity="end"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/win_Score"
+                    android:textSize="32sp"
+                    android:textColor="@color/black"
+                    android:text="114"
+                    android:fontFamily="@font/baloo"
+                    android:layout_marginEnd="15dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/txtTime"
+                    android:textSize="32sp"
+                    android:textColor="@color/black"
+                    android:text="Time:"
+                    android:fontFamily="@font/baloo"
+                    android:layout_marginStart="15dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:gravity="end"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/win_Time"
+                    android:textSize="32sp"
+                    android:textColor="@color/black"
+                    android:text="14.4s"
+                    android:fontFamily="@font/baloo"
+                    android:layout_marginEnd="15dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_height="190dp"
+            android:layout_width="match_parent" />
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnDialogRestart"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/bg_timebar"
+                    android:fontFamily="@font/baloo"
+                    android:text="Restart"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:gravity="end"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_height="wrap_content"
+                    android:layout_width="150dp"
+                    android:background="@drawable/bg_timebar"
+                    android:id="@+id/btnDialogMenu"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    android:text="Menu"
+                    android:fontFamily="@font/baloo"
+                    android:layout_marginEnd="16dp"
+                    android:layout_gravity="center_horizontal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
